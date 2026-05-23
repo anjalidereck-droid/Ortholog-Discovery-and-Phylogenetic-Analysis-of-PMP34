@@ -1,25 +1,24 @@
-Ortholog Discovery and Phylogenetic Analysis of PMP34 (SLC25A17)
+# Ortholog Discovery and Phylogenetic Analysis of PMP34 (SLC25A17)
 
 This repository contains a complete computational pipeline for identifying orthologous sequences of the peroxisomal membrane protein PMP34 (SLC25A17) across mammalian species and reconstructing their evolutionary relationships using a transparent, dependency minimal Python workflow. The project demonstrates a full comparative genomics workflow suitable for MSc level research in bioinformatics, drug discovery, and molecular evolution.
+---
 
-
-Abstract
+## Abstract
 
 Ortholog identification and phylogenetic reconstruction are fundamental tasks in comparative genomics. This project implements a fully transparent, Python based pipeline for discovering orthologs of the peroxisomal membrane protein PMP34 (SLC25A17) across mammalian species. Using BLASTP for homology search, MUSCLE for multiple sequence alignment, and a custom UPGMA algorithm for tree construction, the workflow quantifies evolutionary divergence and visualises species relationships. The resulting phylogeny reflects established mammalian taxonomy, confirming the evolutionary conservation of PMP34 and demonstrating the utility of lightweight computational pipelines for protein evolution studies.
 
+---
 
-1. Scientific Goal
+## 1. Scientific Goal
 
 The objective of this project is to investigate the evolutionary conservation of the peroxisomal transporter PMP34 across mammals. PMP34 is a member of the mitochondrial carrier family and plays a key role in peroxisomal metabolite transport. Understanding its conservation provides insight into functional stability, evolutionary divergence, suitability of model organisms, and structural constraints acting on membrane transporters.
 
 This project implements a reproducible computational pipeline to identify orthologs, align their sequences, compute evolutionary distances, and construct a phylogenetic tree.
 
+---
 
-2. Workflow Overview
-2.1 Workflow Diagram
-
-```mermaid
-flowchart TD
+## 2. Workflow Overview
+### 2.1 Workflow
     A[Human Proteome FASTA] --> B[Extract PMP34 Sequence]
     B --> C[BLASTP Against Mammalian Proteomes]
     C --> D[Collect Top Ortholog Hits]
@@ -30,7 +29,7 @@ flowchart TD
     G --> I[Dendrogram Visualisation]
 ---
 
-3. Workflow Rationale
+## 3. Workflow Rationale
 
 The pipeline follows a standard comparative genomics workflow designed to ensure transparency, reproducibility, and methodological clarity. Each stage reflects a widely accepted computational approach for ortholog identification and phylogenetic reconstruction.
 
@@ -43,6 +42,8 @@ The pipeline follows a standard comparative genomics workflow designed to ensure
 7. Visualisation of the phylogeny using SciPy’s dendrogram function to produce a publication quality figure (Virtanen et al., 2020).  
 
 This workflow is intentionally implemented without Biopython to demonstrate algorithmic understanding and ensure full transparency of each computational step.
+
+---
 
 ## 4. Methods
 
@@ -93,6 +94,7 @@ The resulting hierarchical tree structure was exported in Newick format for comp
 SciPy’s dendrogram function was used to generate a publication quality phylogenetic tree with species specific colouring and a distance scale bar (Virtanen et al., 2020).  
 This visualisation provides an intuitive representation of evolutionary relationships among PMP34 orthologs.
 
+---
 
 ## 5. Results
 
@@ -130,17 +132,23 @@ PMP34’s conservation supports its essential metabolic role.
 Model organisms such as mouse and dog retain sufficient similarity for functional studies.  
 The phylogeny aligns with established mammalian taxonomy, validating the computational approach.
 
+---
+
 ## 6. Conclusion
 
 This project demonstrates a complete, transparent, and reproducible pipeline for ortholog discovery and phylogenetic analysis using pure Python.  
 The resulting phylogenetic tree confirms the evolutionary conservation of PMP34 across mammals and illustrates the power of computational genomics for understanding protein evolution.  
 The workflow is suitable for extension to other protein families, comparative genomics studies, or functional annotation pipelines.
 
+---
+
 ## 7. How to Cite This Repository
 
 If you use this pipeline in academic work, please cite:
 
 Anjali (2026). Ortholog Discovery and Phylogenetic Analysis of PMP34 (SLC25A17). GitHub Repository. Liverpool, United Kingdom.
+
+---
 
 ## 8. References
 
