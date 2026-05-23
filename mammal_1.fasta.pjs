@@ -1,0 +1,22 @@
+{
+  "version": "1.2",
+  "dbname": "mammal_1.fasta",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "mammal_1.fasta",
+  "number-of-letters": 23114720,
+  "number-of-sequences": 54825,
+  "last-updated": "2026-05-23T00:40:00",
+  "number-of-volumes": 1,
+  "bytes-total": 34776804,
+  "bytes-to-cache": 23608254,
+  "files": [
+    "mammal_1.fasta.pdb",
+    "mammal_1.fasta.phr",
+    "mammal_1.fasta.pin",
+    "mammal_1.fasta.pot",
+    "mammal_1.fasta.psq",
+    "mammal_1.fasta.ptf",
+    "mammal_1.fasta.pto"
+  ]
+}
