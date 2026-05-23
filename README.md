@@ -28,7 +28,7 @@ flowchart TD
     F --> G[UPGMA Tree Construction]
     G --> H[Newick Export]
     G --> I[Dendrogram Visualisation]
-
+---
 
 3. Workflow Rationale
 
